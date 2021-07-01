@@ -1,17 +1,99 @@
-body{
-font-family: 'Roboto', sans-serif;
+body {
+	font-family: "Roboto", sans-serif;
 }
 
+/* Generalities and variables*/
+$couleur-primaire: #9356dc;
+$couleur-secondaire: #ff79da;
+$couleur-tertiaire: #99e2d0;
+$couleur-back-grey1: #f2f2f2;
+$couleur-back-grey2: #dfdfdf;
 
-/* General Uses */
+$testborder: 2px solid blue;
+
 .title {
-    font-family: Shrikhand;
+	font-family: Shrikhand;
 }
 
-header{
-    border: 2px solid blue;
+@mixin center($direction) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
 }
-footer{
-    color: white;
-    background-color: grey;
+
+header {
+	@include center(row);
+	#logo {
+		display: block;
+		margin: 0 auto;
+		padding: 10px;
+	}
+}
+#localisation {
+	@include center(column);
+	background-color: $couleur-back-grey1;
+	text-align: center;
+	h1 {
+		width: 75%;
+	}
+	.map-search {
+		@include center(row);
+		width: 100%;
+		background-color: $couleur-back-grey2;
+		padding: 10px 0;
+		&__icon {
+			margin-right: 10px;
+		}
+		&__input {
+			background-color: $couleur-back-grey2;
+			font-weight: bolder;
+			color: #000;
+			border-style: none;
+		}
+	}
+	.btn {
+		background: linear-gradient(
+			to left top,
+			$couleur-primaire,
+			$couleur-secondaire
+		);
+		box-shadow: 3px 4px 5px #d1d1d1;
+		height: 45px;
+		width: 65%;
+		color: #f2f2f2;
+		border-radius: 20px;
+		font-weight: bold;
+		cursor: pointer;
+		border: none;
+		margin: 10px 0 40px;
+	}
+}
+
+/* sectin Fonctionnement */
+#fonctionnement {
+	padding: 20px 20px;
+
+	.chosir {
+		@include center(row);
+	}
+	.composer {
+		@include center(row);
+	}
+	.deguster {
+		@include center(row);
+	}
+}
+
+/* section Restaurant */
+
+#restaurants {
+	background-color: $couleur-back-grey1;
+	padding: 0 20px;
+}
+
+footer {
+	color: white;
+	background-color: #303030;
+	padding: 5px 20px;
 }

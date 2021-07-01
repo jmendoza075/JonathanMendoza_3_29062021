@@ -1,18 +1,163 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-/* General Uses */
+/* Generalities and variables*/
 .title {
   font-family: Shrikhand;
 }
 
 header {
-  border: 2px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header #logo {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#localisation h1 {
+  width: 75%;
+}
+
+#localisation .map-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background-color: #dfdfdf;
+  padding: 10px 0;
+}
+
+#localisation .map-search__icon {
+  margin-right: 10px;
+}
+
+#localisation .map-search__input {
+  background-color: #dfdfdf;
+  font-weight: bolder;
+  color: #000;
+  border-style: none;
+}
+
+#localisation .btn {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(to left top, #9356dc, #ff79da);
+  -webkit-box-shadow: 3px 4px 5px #d1d1d1;
+          box-shadow: 3px 4px 5px #d1d1d1;
+  height: 45px;
+  width: 65%;
+  color: #f2f2f2;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin: 10px 0 40px;
+}
+
+/* sectin Fonctionnement */
+#fonctionnement {
+  padding: 20px 20px;
+}
+
+#fonctionnement .chosir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#fonctionnement .composer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#fonctionnement .deguster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* section Restaurant */
+#restaurants {
+  background-color: #f2f2f2;
+  padding: 0 20px;
 }
 
 footer {
   color: white;
-  background-color: grey;
+  background-color: #303030;
+  padding: 5px 20px;
 }
 /*# sourceMappingURL=style.css.map */

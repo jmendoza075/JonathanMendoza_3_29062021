@@ -22,6 +22,27 @@ $testborder: 2px solid blue;
 	flex-direction: $direction;
 }
 
+@mixin start($direction) {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+@mixin fonction-choix {
+	background-color: $couleur-back-grey1;
+	box-shadow: 3px 4px 5px $couleur-back-grey2;
+	height: 70px;
+	width: 85%;
+	border-radius: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+	margin-left: 7px;
+	padding-left: 33px;
+}
+
 header {
 	@include center(row);
 	#logo {
@@ -36,6 +57,9 @@ header {
 	text-align: center;
 	h1 {
 		width: 75%;
+	}
+	p {
+		margin-top: 0px;
 	}
 	.map-search {
 		@include center(row);
@@ -74,14 +98,24 @@ header {
 #fonctionnement {
 	padding: 20px 20px;
 
-	.chosir {
-		@include center(row);
+	.fonc__block {
+		@include start(row);
+		@include fonction-choix;
+		.icon-number {
+			position: absolute;
+			left: 20px;
+		}
+		p {
+			padding-left: 30px;
+		}
 	}
-	.composer {
-		@include center(row);
+
+	.fa-stack {
+		font-size: 0.8em;
+		color: $couleur-primaire;
 	}
-	.deguster {
-		@include center(row);
+	i {
+		vertical-align: middle;
 	}
 }
 

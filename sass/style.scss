@@ -122,12 +122,62 @@ header {
 /* section Restaurant */
 
 #restaurants {
+	@include start(column);
 	background-color: $couleur-back-grey1;
-	padding: 0 20px;
+	padding: 10px 20px;
+	h2 {
+		align-self: flex-start;
+	}
+}
+.resto-block {
+	width: 100%;
+	height: 200px;
+	border-radius: 20px;
+	box-shadow: 3px 4px 5px #d1d1d1;
+	margin: 10px 0;
+}
+.resto-block__img {
+	width: 100%;
+	height: 65%;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+.new-label {
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	right: 50px;
+	margin-top: 20px;
+	@include center(row);
+	background: $couleur-tertiaire;
+	color: green;
+	font-weight: bold;
+	box-shadow: 2px 3px 5px #d1d1d1;
+	border-radius: 3px;
 }
 
+.resto-block__info {
+	padding-left: 20px;
+	@include start(row);
+}
+
+.info__text {
+	width: 85%;
+	line-height: 0.5em;
+}
 footer {
 	color: white;
 	background-color: #303030;
 	padding: 5px 20px;
+	.foot-icon {
+		@include start(row);
+
+		.fa-handshake {
+			transform: rotate(315deg);
+		}
+
+		p {
+			padding-left: 10px;
+		}
+	}
 }

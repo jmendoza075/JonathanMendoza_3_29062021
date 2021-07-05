@@ -6,7 +6,7 @@
 		<title>Ohmyfood</title>
 		<meta name="description"
 			content="ohmyfood! localisez, choisissez le menu et réservez en ligne votre restaurant préféré." />
-		<link href="/css/style.css" type="text/css" rel="stylesheet">
+		<link href="../css/style.css" type="text/css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,30 +17,34 @@
 		<!--Header-->
 		<header>
 			<nav>
-				<i class="fas fa-arrow-left"></i>
+				<a href="../index.html"><i class="fas fa-arrow-left"></i> </a> 
 			</nav>
-			<img id="logo" src="/images/ohmyfood.svg" alt="ohmyfood logo" />
+			<img id="logo" src="../images/ohmyfood.svg" alt="ohmyfood logo" />
 		</header>
 
 		<main>
 			<!--Restaurant Hero Image and Title-->
 			<div class="hero-container">
-				<div class="image-box"><img class=" image-box__img"  src="/images/ala_francaise.jpg" alt="À la française"></div>
+				<div class="image-box"><img class=" image-box__img"  src="../images/ala_francaise.jpg" alt="À la française"></div>
 				<div class="title-box"> 
-					<h1 class="title">À la française</h1> <i class="far fa-heart fa-lg"></i>
+					<h1 class="titre">À la française</h1> <i class="far fa-heart fa-lg"></i>
 				</div>
 			</div>
 						
 			<!--Section-->
 			<section id="carte" >
+				<h4>ENTRÉES</h4>
+				
 				<div class="menu">
-					<h4>ENTRÉES</h4>
 					<div>
-						<h3>Tartare de poulpe acidulé</h3>
-						<p>Aux zestes d'orange</p>
-						<p class="menu__block__prix">25€</p>
-						<i class="fas fa-check-circle"></i>
+						<div>
+							<h3>Tartare de poulpe acidulé</h3>
+							<p>Aux zestes d'orange</p>
+							<p class="menu__block__prix">25€</p>
+						</div>
+						<div class="choix"><i class="fas fa-check-circle"></i></div>
 					</div>
+
 					<div>
 						<h3>Velouté de légumes d'antan</h3>
 						<p>Carotte, panais, topinambour</p>
@@ -111,7 +115,7 @@
 
 		<!--Footer -->
 		<footer>
-			<h3 class="title">ohmyfood</h3>
+			<h3 class="titre">ohmyfood</h3>
 			<div class="foot-icon">
 				<i class="fas fa-utensils"></i>
 				<p>Proposer un restaurant</p>
@@ -121,7 +125,7 @@
 				<p>Devenir partenaire</p>
 			</div>
 			<p>Mentions légales</p>
-			<p>Contact</p>
+			<a href="mailto:info@ohmyfood.com">Contact</a>
 		</footer>
 	</body>
 

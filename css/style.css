@@ -3,7 +3,12 @@ body {
 }
 
 /* Generalities and variables*/
-.title {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.titre {
   font-family: Shrikhand;
 }
 
@@ -45,6 +50,7 @@ header #logo {
           flex-direction: column;
   background-color: #f2f2f2;
   text-align: center;
+  border-top: 2px ridge #f2f2f2;
 }
 
 #localisation .map-search {
@@ -141,10 +147,6 @@ header #logo {
   left: 20px;
 }
 
-#fonctionnement .fonc__block p {
-  padding-left: 30px;
-}
-
 #fonctionnement .fa-stack {
   font-size: 0.8em;
   color: #9356dc;
@@ -152,6 +154,11 @@ header #logo {
 
 #fonctionnement i {
   vertical-align: middle;
+  padding-right: 20px;
+}
+
+#fonctionnement .icon-figure {
+  padding-left: 10px;
 }
 
 /* section Restaurant */
@@ -275,7 +282,7 @@ header #logo {
           align-items: center;
 }
 
-.hero-container .title-box .title {
+.hero-container .title-box .titre {
   padding-left: 20px;
 }
 
@@ -290,8 +297,13 @@ header #logo {
 }
 
 #carte h4 {
-  border-bottom: 3px solid #99e2d0;
   margin: 40px 0 20px;
+  border-style: solid;
+  border-bottom: 5px solid #99e2d0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 40px;
 }
 
 .menu > div {
@@ -331,6 +343,12 @@ header #logo {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+}
+
+.choix {
+  background-color: #99e2d0;
+  width: 10%;
+  border: 2px solid blue;
 }
 
 #commander {

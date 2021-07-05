@@ -11,7 +11,11 @@ $couleur-back-grey2: #dfdfdf;
 
 $testborder: 2px solid blue;
 
-.title {
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.titre {
 	font-family: Shrikhand;
 }
 
@@ -72,6 +76,7 @@ header {
 	@include center(column);
 	background-color: $couleur-back-grey1;
 	text-align: center;
+	border-top: 2px ridge $couleur-back-grey1;
 
 	.map-search {
 		@include center(row);
@@ -110,9 +115,6 @@ header {
 			position: absolute;
 			left: 20px;
 		}
-		p {
-			padding-left: 30px;
-		}
 	}
 
 	.fa-stack {
@@ -121,6 +123,10 @@ header {
 	}
 	i {
 		vertical-align: middle;
+		padding-right: 20px;
+	}
+	.icon-figure {
+		padding-left: 10px;
 	}
 }
 
@@ -200,7 +206,7 @@ header {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		.title {
+		.titre {
 			padding-left: 20px;
 		}
 		i {
@@ -214,8 +220,13 @@ header {
 	background-color: $couleur-back-grey1;
 	padding: 20px;
 	h4 {
-		border-bottom: 3px solid $couleur-tertiaire;
 		margin: 40px 0 20px;
+		border-style: solid;
+		border-bottom: 5px solid #99e2d0;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		width: 40px;
 	}
 }
 .menu > div {
@@ -235,6 +246,11 @@ header {
 		font-weight: bolder;
 		align-self: end;
 	}
+}
+.choix {
+	background-color: $couleur-tertiaire;
+	width: 10%;
+	border: $testborder;
 }
 #commander {
 	background-color: $couleur-back-grey1;

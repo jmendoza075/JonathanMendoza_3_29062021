@@ -28,14 +28,16 @@
 		</div>
 		<h1>Réservez le menu qui vous convient</h1>
 		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>	
-		<button class="btn">Explorer nos restaurants </button>
+		<button class="btn"> <a href="#restaurants">
+			Explorer nos restaurants
+		  </a> </button>
 	</section>
 
 
 	<!--Section Fonctionnement-->
 	<section id="fonctionnement">
 		<h2>Fonctionnement</h2>
-		
+		<nav>
 			<div class="fonc__block">
 				<div class="icon-number">
 					<span class="fa-stack fa-2x">
@@ -43,8 +45,8 @@
 						<strong class="fa-stack-1x fa-inverse">1</strong>
 					</span>
 				</div>
-				<div><i class="fas fa-mobile-alt fa-lg"></i></div>
-				<p>Choisissez un restaurant</p>	
+				<div  class="icon-figure"><i class="fas fa-mobile-alt fa-lg"></i></div>
+				<p>Choisissez un restaurant</p>
 			</div>
 			<div class="fonc__block">
 				<div class="icon-number">
@@ -53,7 +55,7 @@
 						<strong class="fa-stack-1x fa-inverse">2</strong>
 					</span>
 				</div>
-				<div><i class="fas fa-list-ul  fa-lg"></i></div>
+				<div class="icon-figure"><i class="fas fa-list-ul  fa-lg"></i></div>
 				<p>Composez votre menu</p> 
 			</div>
 			<div class="fonc__block">
@@ -63,10 +65,10 @@
 					<strong class="fa-stack-1x fa-inverse">3</strong>
 					</span>
 				</div>
-				<div><i class="fas fa-store fa-lg"></i></div>
+				<div class="icon-figure"><i class="fas fa-store fa-lg"></i></div>
 				<p>Dégustez au restaurant</p>
 			</div>
-		
+		</nav>
 	</section>
 
 
@@ -78,7 +80,7 @@
 		<h2>Restaurants</h2>
 		<div class="resto-block">
 			<div class="resto-block__nouveau-label">Nouveau</div>
-			<img class="resto-block__img"  src="images/la_palette_du_gout.jpg" alt="La palette du goût">
+			<a href="./restaurants/resto_menu.html"> <img class="resto-block__img"  src="images/la_palette_du_gout.jpg" alt="La palette du goût"></a> 
 			<div class="resto-block__info">
 				<div class="resto-block__info__text">
 					<h3>La palette du goût</h3>
@@ -125,7 +127,7 @@
 
 	<!--Footer -->
 	<footer>
-		<h3 class="title">ohmyfood</h3>
+		<h3 class="titre">ohmyfood</h3>
 		<div class="foot-icon">
 			<i class="fas fa-utensils"></i>
 			<p>Proposer un restaurant</p>
@@ -135,7 +137,7 @@
 			<p>Devenir partenaire</p>
 		</div>
 		<p>Mentions légales</p>
-		<p>Contact</p>
+		<a href="mailto:info@ohmyfood.com">Contact</a>
 	</footer>
 </body>
 

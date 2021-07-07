@@ -221,21 +221,16 @@ header {
 	background-color: $couleur-back-grey1;
 	padding: 20px;
 	h4 {
-		margin: 40px 0 20px;
 		padding-bottom: 5px;
-		border-style: solid;
 		border-bottom: 4px solid #99e2d0;
-		border-top: none;
-		border-left: none;
-		border-right: none;
 		width: 40px;
 	}
 }
 
-.menu-item {
+.menu-list {
 	display: flex;
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding: 10px;
 	box-shadow: 3px 4px 5px #d1d1d1;
 	margin-top: 15px;
@@ -254,7 +249,7 @@ header {
 			overflow: hidden;
 		}
 		p {
-			margin: 0;
+			margin: 10px 0 0 0;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
@@ -263,17 +258,19 @@ header {
 	&__prix {
 		display: flex;
 		align-self: flex-end;
-		font-weight: bold;
+		font-weight: bolder;
+		padding-right: 5px;
 	}
-	&__confirm {
+	&__checked {
 		@include center(row);
 		background-color: $couleur-tertiaire;
 		width: 4rem;
 		color: white;
+		font-size: 1.5em;
 		margin: -1rem -5rem -1rem 1rem;
-		transition-duration: 1s;
+		transition-duration: 0.4s;
 	}
-	&:hover &__confirm {
+	&:hover &__checked {
 		margin-right: -1rem;
 	}
 	&__icon-cont {

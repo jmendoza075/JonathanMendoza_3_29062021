@@ -12,6 +12,7 @@ a {
   font-family: Shrikhand;
 }
 
+/* Specifics*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,9 +157,11 @@ header #logo {
 }
 
 #fonctionnement .fonc__block:hover {
-  opacity: 0.7;
-  -webkit-box-shadow: 3px 4px 5px #6e6e6e;
-          box-shadow: 3px 4px 5px #6e6e6e;
+  background-color: #9356dc46;
+}
+
+#fonctionnement .fonc__block:hover .icon-figure {
+  color: #9356dc;
 }
 
 #fonctionnement .fa-stack {
@@ -172,6 +175,11 @@ header #logo {
 }
 
 #fonctionnement .icon-figure {
+  width: 2rem;
+}
+
+#fonctionnement p {
+  font-weight: bolder;
   padding-left: 10px;
 }
 
@@ -206,6 +214,7 @@ header #logo {
   -webkit-box-shadow: 3px 4px 5px #d1d1d1;
           box-shadow: 3px 4px 5px #d1d1d1;
   margin: 10px 0;
+  /* Heart Icon Animation */
 }
 
 #restaurants .resto-block__img {
@@ -247,11 +256,57 @@ header #logo {
   text-align: center;
   padding: 3px;
   background: #99e2d0;
-  color: green;
+  color: #1b6150;
   font-weight: bold;
   -webkit-box-shadow: 2px 3px 5px #d1d1d1;
           box-shadow: 2px 3px 5px #d1d1d1;
   border-radius: 3px;
+}
+
+#restaurants .resto-block .heart-main {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: lighter;
+}
+
+#restaurants .resto-block .heart-bg {
+  color: transparent;
+}
+
+#restaurants .resto-block .heart-bg:focus {
+  display: block;
+}
+
+#restaurants .resto-block .heart-icon {
+  cursor: pointer;
+}
+
+#restaurants .resto-block .heart-icon input {
+  display: none;
+}
+
+#restaurants .resto-block .heart-icon label {
+  cursor: pointer;
+}
+
+#restaurants .resto-block .heart-icon input:checked + label {
+  /*heart main and bg transition and animation*/
+}
+
+#restaurants .resto-block .heart-icon input:checked + label .far {
+  opacity: 0;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+#restaurants .resto-block .heart-icon input:checked + label .fas {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Page RESTO */
@@ -294,14 +349,58 @@ header #logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Heart Icon Animation */
 }
 
 .hero-container .titre-box .titre {
   padding-left: 20px;
 }
 
-.hero-container .titre-box i {
-  padding-right: 20px;
+.hero-container .titre-box__heart-main {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: lighter;
+}
+
+.hero-container .titre-box__heart-bg {
+  color: transparent;
+}
+
+.hero-container .titre-box__heart-bg:focus {
+  display: block;
+}
+
+.hero-container .titre-box__heart-icon {
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.hero-container .titre-box__heart-icon input {
+  display: none;
+}
+
+.hero-container .titre-box__heart-icon label {
+  cursor: pointer;
+}
+
+.hero-container .titre-box__heart-icon input:checked + label {
+  /*heart main and bg transition and animation*/
+}
+
+.hero-container .titre-box__heart-icon input:checked + label .far {
+  opacity: 0;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.hero-container .titre-box__heart-icon input:checked + label .fas {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Setion MENU */
@@ -363,7 +462,7 @@ header #logo {
   padding-right: 5px;
 }
 
-.menu-list__checked {
+.menu-list__checked-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,11 +485,11 @@ header #logo {
           transition-duration: 0.4s;
 }
 
-.menu-list:hover .menu-list__checked {
+.menu-list:hover .menu-list__checked-box {
   margin-right: -1rem;
 }
 
-.menu-list__icon-cont {
+.menu-list__checked-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,7 +509,7 @@ header #logo {
           transition-duration: 0.5s;
 }
 
-.menu-list:hover .menu-list__icon-cont {
+.menu-list:hover .menu-list__checked-icon {
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }

@@ -19,6 +19,12 @@
 	<header>
 		<img id="logo" src="images/ohmyfood.svg" alt="ohmyfood logo" />
 	</header>
+	
+	<!--Spinner 
+	
+	<i class="fas fa-spinner fa-pulse fa-3x"></i>
+	
+	-->
 
 	<!--Localisation-->
 	<section id="localisation">
@@ -31,7 +37,7 @@
 		<button class="btn"> 
 			<a href="#restaurants">Explorer nos restaurants</a>	  
 		</button>
-	</section>
+		</section>
 
 
 	<!--Section Fonctionnement-->
@@ -45,7 +51,7 @@
 						<strong class="fa-stack-1x fa-inverse">1</strong>
 					</span>
 				</div>
-				<div  class="icon-figure"><i class="fas fa-mobile-alt fa-lg"></i></div>
+				<div  class="icon-figure"><i class="fas fa-mobile-alt fa-lg fa-fw"></i></div>
 				<p>Choisissez un restaurant</p>
 			</div>
 			<div class="fonc__block">
@@ -55,7 +61,7 @@
 						<strong class="fa-stack-1x fa-inverse">2</strong>
 					</span>
 				</div>
-				<div class="icon-figure"><i class="fas fa-list-ul  fa-lg"></i></div>
+				<div class="icon-figure"><i class="fas fa-list-ul  fa-lg fa-fw"></i></div>
 				<p>Composez votre menu</p> 
 			</div>
 			<div class="fonc__block">
@@ -65,7 +71,7 @@
 					<strong class="fa-stack-1x fa-inverse">3</strong>
 					</span>
 				</div>
-				<div class="icon-figure"><i class="fas fa-store fa-lg"></i></div>
+				<div class="icon-figure"><i class="fas fa-store fa-lg fa-fw"></i></div>
 				<p>Dégustez au restaurant</p>
 			</div>
 		</nav>
@@ -80,13 +86,21 @@
 		<h2>Restaurants</h2>
 		<div class="resto-block">
 			<div class="resto-block__nouveau-label">Nouveau</div>
-			<a href="./restaurants/resto_menu.html"> <img class="resto-block__img"  src="images/small/la_palette_du_gout_1000x667.jpeg" alt="La palette du goût"></a> 
+			<img class="resto-block__img"  src="images/small/la_palette_du_gout_1000x667.jpeg" alt="La palette du goût"></a> 
 			<div class="resto-block__info">
 				<div class="resto-block__info__text">
 					<h3>La palette du goût</h3>
 					<p>Ménilmontant</p>
 				</div>
-				<div><i class="far fa-heart fa-lg"></i></div>
+				<div class="heart-icon">
+					<input type="checkbox" id="heart-la-palette" name="heart-la-palette">
+						<label for="heart-la-palette">
+							<span class="fa-stack ">
+								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+							</span>
+						</label>
+				</div>
 			</div>
 		</div>	
 
@@ -98,29 +112,54 @@
 					<h3>La note enchantée</h3>
 					<p>Charonne</p>
 				</div>
-				<div><i class="far fa-heart fa-lg"></i></div>
+				<div class="heart-icon">
+					<input type="checkbox" id="heart-note-enchantée" name="heart-note-enchantée">
+						<label for="heart-note-enchantée">
+							<span class="fa-stack ">
+								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+							</span>
+						</label>
+				</div>
 			</div>
 		</div>	
 
 		<div class="resto-block">
-			<img class="resto-block__img"  src="images/small/ala_francaise_1000x667.jpg" alt="À la française">
+			<a href="./restaurants/la_francaise.html"> <img class="resto-block__img"  src="images/small/ala_francaise_1000x667.jpg" alt="À la française">
 			<div class="resto-block__info">
 				<div class="resto-block__info__text">
 					<h3>À la française</h3>
 					<p>Cité Rouge</p>
 				</div>
-				<div><i class="far fa-heart fa-lg"></i></div>
+				<div class="heart-icon">
+					<input type="checkbox" id="heart-la-française" name="heart-la-française">
+						<label for="heart-la-française">
+							<span class="fa-stack ">
+								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+							</span>
+						</label>
+				</div>
 			</div>
 		</div>	
-		
+
+
 		<div class="resto-block">
-			<img class="resto-block__img"  src="images/small/delice_ des_sens_1000x685.jpeg" alt="Le délice des sens">
+			<a href="./restaurants/resto_menu.html"> <img class="resto-block__img"  src="images/small/delice_ des_sens_1000x685.jpeg" alt="Le délice des sens"></a> 
 			<div class="resto-block__info">
 				<div class="resto-block__info__text">
 					<h3>Le délice des sens</h3>
 					<p>Folie-Méricourt</p>
 				</div>
-				<div><i class="far fa-heart fa-lg"></i></div>
+				<div class="heart-icon">
+					<input type="checkbox" id="heart-le-délice" name="heart-le-délice">
+						<label for="heart-le-délice">
+							<span class="fa-stack ">
+								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+							</span>
+						</label>
+				</div>
 			</div>
 		</div>	
 	</section>

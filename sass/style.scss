@@ -9,6 +9,10 @@ $couleur-tertiaire: #99e2d0;
 $couleur-back-grey1: #f2f2f2;
 $couleur-back-grey2: #dfdfdf;
 
+$heart-size: 1.5rem;
+$heart-main-color: #000;
+$heart-transition: 0.5s linear;
+
 $testborder: 2px solid blue;
 
 a {
@@ -75,6 +79,14 @@ a {
 	}
 }
 
+@mixin heart-format {
+	font-size: $heart-size;
+	color: $heart-main-color;
+	font-weight: lighter;
+}
+
+/* Specifics*/
+
 header {
 	@include center(row);
 	padding: 10px 20px;
@@ -122,11 +134,17 @@ header {
 	.fonc__block {
 		@include start(row);
 		@include fonction-choix;
+
 		.icon-number {
 			position: absolute;
 			left: 20px;
 		}
-		@include hover-opaque;
+		&:hover {
+			background-color: #9356dc46;
+			& .icon-figure {
+				color: $couleur-primaire;
+			}
+		}
 	}
 
 	.fa-stack {
@@ -138,6 +156,10 @@ header {
 		padding-right: 20px;
 	}
 	.icon-figure {
+		width: 2rem;
+	}
+	p {
+		font-weight: bolder;
 		padding-left: 10px;
 	}
 }
@@ -183,10 +205,46 @@ header {
 			text-align: center;
 			padding: 3px;
 			background: $couleur-tertiaire;
-			color: green;
+			color: darken($couleur-tertiaire, 50%);
 			font-weight: bold;
 			box-shadow: 2px 3px 5px #d1d1d1;
 			border-radius: 3px;
+		}
+
+		/* Heart Icon Animation */
+
+		.heart-main {
+			@include heart-format;
+		}
+		.heart-bg {
+			color: transparent;
+			&:focus {
+				display: block;
+			}
+		}
+
+		.heart-icon {
+			cursor: pointer;
+			& input {
+				display: none;
+			}
+			& label {
+				cursor: pointer;
+			}
+			& input:checked + label {
+				/*heart main and bg transition and animation*/
+				.far {
+					opacity: 0;
+					transition: $heart-transition;
+				}
+				.fas {
+					transition: $heart-transition;
+					font-size: $heart-size;
+					background: linear-gradient($couleur-primaire, $couleur-secondaire);
+					-webkit-background-clip: text;
+					color: transparent;
+				}
+			}
 		}
 	}
 }
@@ -222,8 +280,41 @@ header {
 		.titre {
 			padding-left: 20px;
 		}
-		i {
-			padding-right: 20px;
+		/* Heart Icon Animation */
+
+		&__heart-main {
+			@include heart-format;
+		}
+		&__heart-bg {
+			color: transparent;
+			&:focus {
+				display: block;
+			}
+		}
+
+		&__heart-icon {
+			padding-right: 2rem;
+			cursor: pointer;
+			& input {
+				display: none;
+			}
+			& label {
+				cursor: pointer;
+			}
+			& input:checked + label {
+				/*heart main and bg transition and animation*/
+				.far {
+					opacity: 0;
+					transition: $heart-transition;
+				}
+				.fas {
+					transition: $heart-transition;
+					font-size: $heart-size;
+					background: linear-gradient($couleur-primaire, $couleur-secondaire);
+					-webkit-background-clip: text;
+					color: transparent;
+				}
+			}
 		}
 	}
 }
@@ -273,7 +364,7 @@ header {
 		font-weight: bolder;
 		padding-right: 5px;
 	}
-	&__checked {
+	&__checked-box {
 		@include center(row);
 		background-color: $couleur-tertiaire;
 		width: 4rem;
@@ -282,15 +373,15 @@ header {
 		margin: -1rem -5rem -1rem 1rem;
 		transition-duration: 0.4s;
 	}
-	&:hover &__checked {
+	&:hover &__checked-box {
 		margin-right: -1rem;
 	}
-	&__icon-cont {
+	&__checked-icon {
 		@include center(row);
 		transform: rotate(180deg);
 		transition-duration: 0.5s;
 	}
-	&:hover &__icon-cont {
+	&:hover &__checked-icon {
 		transform: rotate(0);
 	}
 }

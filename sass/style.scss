@@ -232,7 +232,6 @@ header {
 				cursor: pointer;
 			}
 			& input:checked + label {
-				/*heart main and bg transition and animation*/
 				.far {
 					opacity: 0;
 					transition: $heart-transition;
@@ -302,7 +301,6 @@ header {
 				cursor: pointer;
 			}
 			& input:checked + label {
-				/*heart main and bg transition and animation*/
 				.far {
 					opacity: 0;
 					transition: $heart-transition;

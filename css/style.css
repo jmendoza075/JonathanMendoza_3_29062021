@@ -289,10 +289,6 @@ header #logo {
   cursor: pointer;
 }
 
-#restaurants .resto-block .heart-icon input:checked + label {
-  /*heart main and bg transition and animation*/
-}
-
 #restaurants .resto-block .heart-icon input:checked + label .far {
   opacity: 0;
   -webkit-transition: 0.5s linear;
@@ -381,10 +377,6 @@ header #logo {
 
 .hero-container .titre-box__heart-icon label {
   cursor: pointer;
-}
-
-.hero-container .titre-box__heart-icon input:checked + label {
-  /*heart main and bg transition and animation*/
 }
 
 .hero-container .titre-box__heart-icon input:checked + label .far {

@@ -64,20 +64,7 @@ header #logo {
           animation: spin 2s linear forwards;
 }
 
-/* spinner animation 
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	90% {
-		transform: rotate(360deg);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(0);
-	}
-}*/
+/* spinner animation */
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -177,6 +164,11 @@ header #logo {
   font-weight: bolder;
   color: #000;
   border-style: none;
+}
+
+#localisation .map-search__input:focus {
+  color: #9356dc;
+  outline: 2px solid #ff79da;
 }
 
 #localisation h1 {
@@ -502,6 +494,44 @@ header #logo {
   width: 40px;
 }
 
+#plats-move-up {
+  -webkit-animation: move-up 2s ease-in-out;
+          animation: move-up 2s ease-in-out;
+}
+
+@-webkit-keyframes move-up {
+  0% {
+    -webkit-transform: translateY(-19rem);
+            transform: translateY(-19rem);
+  }
+}
+
+@keyframes move-up {
+  0% {
+    -webkit-transform: translateY(-19rem);
+            transform: translateY(-19rem);
+  }
+}
+
+#desserts-move-up {
+  -webkit-animation: move-up2 2s ease-in-out;
+          animation: move-up2 2s ease-in-out;
+}
+
+@-webkit-keyframes move-up2 {
+  0% {
+    -webkit-transform: translateY(-38rem);
+            transform: translateY(-38rem);
+  }
+}
+
+@keyframes move-up2 {
+  0% {
+    -webkit-transform: translateY(-38rem);
+            transform: translateY(-38rem);
+  }
+}
+
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,6 +544,9 @@ header #logo {
   margin-top: 15px;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
+  -webkit-animation: menu-listing 1.5s 1200ms ease-in-out forwards;
+          animation: menu-listing 1.5s 1200ms ease-in-out forwards;
 }
 
 .menu-list__text {
@@ -599,6 +632,30 @@ header #logo {
 .menu-list:hover .menu-list__checked-icon {
   -webkit-transform: rotate(0);
           transform: rotate(0);
+}
+
+@-webkit-keyframes menu-listing {
+  from {
+    -webkit-transform: translate(-999px);
+            transform: translate(-999px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes menu-listing {
+  from {
+    -webkit-transform: translate(-999px);
+            transform: translate(-999px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 #commander {

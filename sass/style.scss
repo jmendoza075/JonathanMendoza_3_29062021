@@ -167,6 +167,10 @@ header {
 			font-weight: bolder;
 			color: #000;
 			border-style: none;
+			&:focus {
+				color: $couleur-primaire;
+				outline: 2px solid $couleur-secondaire;
+			}
 		}
 	}
 	h1 {
@@ -293,6 +297,7 @@ header {
 					transition: $heart-transition;
 					font-size: $heart-size;
 					background: linear-gradient($couleur-primaire, $couleur-secondaire);
+					background-clip: text;
 					-webkit-background-clip: text;
 					color: transparent;
 				}
@@ -363,6 +368,7 @@ header {
 					font-size: $heart-size;
 					background: linear-gradient($couleur-primaire, $couleur-secondaire);
 					-webkit-background-clip: text;
+					background-clip: text;
 					color: transparent;
 				}
 			}
@@ -381,6 +387,24 @@ header {
 	}
 }
 
+#plats-move-up {
+	animation: move-up 2s ease-in-out;
+}
+@keyframes move-up {
+	0% {
+		transform: translateY(-19rem);
+	}
+}
+
+#desserts-move-up {
+	animation: move-up2 2s ease-in-out;
+}
+@keyframes move-up2 {
+	0% {
+		transform: translateY(-38rem);
+	}
+}
+
 .menu-list {
 	display: flex;
 	background-color: white;
@@ -390,7 +414,9 @@ header {
 	margin-top: 15px;
 	cursor: pointer;
 	overflow: hidden;
+	opacity: 0;
 
+	animation: menu-listing 1.5s 1200ms ease-in-out forwards;
 	&__text {
 		flex: 1;
 		white-space: nowrap;
@@ -434,6 +460,16 @@ header {
 	}
 	&:hover &__checked-icon {
 		transform: rotate(0);
+	}
+}
+
+@keyframes menu-listing {
+	from {
+		transform: translate(-999px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0);
 	}
 }
 

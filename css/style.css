@@ -260,7 +260,7 @@ main {
   transition: opacity 400ms;
 }
 
-#localisation .btn:hover {
+#localisation .btn:active {
   opacity: 0.7;
   -webkit-box-shadow: 3px 4px 5px #6e6e6e;
           box-shadow: 3px 4px 5px #6e6e6e;

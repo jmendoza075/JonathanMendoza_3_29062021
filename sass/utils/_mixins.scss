@@ -42,11 +42,12 @@
 	margin: 20px 0 50px;
 	padding: 0 40px;
 	transition: opacity 400ms;
-	&:hover {
+	&:active {
 		opacity: 0.7;
 		box-shadow: 3px 4px 5px #6e6e6e;
 	}
 }
+
 @mixin hover-opaque {
 	&:hover {
 		opacity: 0.7;

@@ -1,3 +1,12 @@
+main {
+	opacity: 0;
+	animation: mainpage-on 0.3s linear 1.5s forwards;
+}
+@keyframes mainpage-on {
+	to {
+		opacity: 1;
+	}
+}
 #localisation {
 	@include center(column);
 	background-color: $couleur-back-grey1;

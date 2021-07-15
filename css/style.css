@@ -37,29 +37,29 @@ header #logo {
 /* loading spinner */
 #overlay {
   position: fixed;
-  top: 4rem;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #f2f2f2;
-  -webkit-animation: fadeout 2.5s linear forwards;
-          animation: fadeout 2.5s linear forwards;
+  -webkit-animation: fadeout 1.5s linear 1s forwards;
+          animation: fadeout 1.5s linear 1s forwards;
   z-index: 10;
 }
 
 #spinner {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   margin-left: -4rem;
-  border: 1rem solid #ff79da;
+  border: 1.5rem solid #ff79da;
   border-radius: 50%;
-  border-top: 1rem solid #9356dc;
-  border-bottom: 1rem solid #99e2d0;
-  width: 5rem;
-  height: 5rem;
-  -webkit-animation: spin 2s linear forwards;
-          animation: spin 2s linear forwards;
+  border-top: 1.5rem solid #9356dc;
+  border-bottom: 1.5rem solid #99e2d0;
+  width: 4rem;
+  height: 4rem;
+  -webkit-animation: spin 0.8s linear infinite;
+          animation: spin 0.8s linear infinite;
 }
 
 /* spinner animation */
@@ -89,7 +89,7 @@ header #logo {
   0% {
     opacity: 1;
   }
-  90% {
+  50% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -104,7 +104,7 @@ header #logo {
   0% {
     opacity: 1;
   }
-  90% {
+  50% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -159,6 +159,24 @@ header #logo {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+main {
+  opacity: 0;
+  -webkit-animation: mainpage-on 0.3s linear 1.5s forwards;
+          animation: mainpage-on 0.3s linear 1.5s forwards;
+}
+
+@-webkit-keyframes mainpage-on {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mainpage-on {
+  to {
+    opacity: 1;
+  }
 }
 
 #localisation {

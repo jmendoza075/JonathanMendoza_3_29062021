@@ -16,174 +16,179 @@
 </head>
 
 <body>
-	<!--Header-->
-	<header>
-		<img id="logo" src="images/ohmyfood.svg" alt="ohmyfood logo" />
-	</header>
-	
-	<!-- Loading Spinner -->
-	<div id="overlay">
-		<div id="spinner"></div>
-	</div>
-	
 
-	
-	<!--Localisation-->
-	<section id="localisation">
-        <div class="map-search">
-            <div class="map-search__icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div><input class="map-search__input" type="search" placeholder="Paris, Belleville"> </div>
+		<!-- Loading Spinner -->
+		<div id="overlay">
+			<div id="spinner"></div>
 		</div>
-		<h1>Réservez le menu qui vous convient</h1>
-		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>	
-		<button class="btn" onclick="window.location.href='#restaurants';">Explorer nos restaurants</button> 
+	
+	<main>
 
+		<!--Header-->
+		<header>
+			<img id="logo" src="images/ohmyfood.svg" alt="ohmyfood logo" />
+		</header>
+		
+
+		<!--Localisation-->
+		<section id="localisation">
+			<div class="map-search">
+				<div class="map-search__icon"><i class="fas fa-map-marker-alt"></i></div>
+				<div><input class="map-search__input" type="search" placeholder="Paris, Belleville"> </div>
+			</div>
+			<h1>Réservez le menu qui vous convient</h1>
+			<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>	
+			<button class="btn" onclick="window.location.href='#restaurants';">Explorer nos restaurants</button> 
+
+			</section>
+
+
+		<!--Section Fonctionnement-->
+		<section id="fonctionnement">
+			<h2>Fonctionnement</h2>
+			<nav>
+				<div class="fonc__block">
+					<div class="icon-number">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<strong class="fa-stack-1x fa-inverse">1</strong>
+						</span>
+					</div>
+					<div  class="icon-figure"><i class="fas fa-mobile-alt fa-lg fa-fw"></i></div>
+					<p>Choisissez un restaurant</p>
+				</div>
+				<div class="fonc__block">
+					<div class="icon-number">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<strong class="fa-stack-1x fa-inverse">2</strong>
+						</span>
+					</div>
+					<div class="icon-figure"><i class="fas fa-list-ul  fa-lg fa-fw"></i></div>
+					<p>Composez votre menu</p> 
+				</div>
+				<div class="fonc__block">
+					<div class="icon-number">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-circle fa-stack-2x"></i>
+						<strong class="fa-stack-1x fa-inverse">3</strong>
+						</span>
+					</div>
+					<div class="icon-figure"><i class="fas fa-store fa-lg fa-fw"></i></div>
+					<p>Dégustez au restaurant</p>
+				</div>
+			</nav>
 		</section>
 
 
-	<!--Section Fonctionnement-->
-	<section id="fonctionnement">
-		<h2>Fonctionnement</h2>
-		<nav>
-			<div class="fonc__block">
-				<div class="icon-number">
-					<span class="fa-stack fa-2x">
-						<i class="fas fa-circle fa-stack-2x"></i>
-						<strong class="fa-stack-1x fa-inverse">1</strong>
-					</span>
+		<!--Section Restaurants-->
+		<section id="restaurants" class="main-grid">
+			<h2>Restaurants</h2>
+			<div class="resto-block" >
+				<div class="resto-block__nouveau-label">Nouveau</div>
+				<a href="restaurants/resto_menu.html">
+					<img class="resto-block__img"  src="images/small/la_palette_du_gout_1000x667.jpeg" alt="La palette du goût">
+				</a>
+				<div class="resto-block__info">
+					<div class="resto-block__info__text">
+						<h3>La palette du goût</h3>
+						<p>Ménilmontant</p>
+					</div>
+					<div class="heart-icon">
+						<input type="checkbox" id="heart-la-palette" name="heart-la-palette">
+							<label for="heart-la-palette">
+								<span class="fa-stack ">
+									<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+									<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+								</span>
+							</label>
+					</div>
 				</div>
-				<div  class="icon-figure"><i class="fas fa-mobile-alt fa-lg fa-fw"></i></div>
-				<p>Choisissez un restaurant</p>
-			</div>
-			<div class="fonc__block">
-				<div class="icon-number">
-					<span class="fa-stack fa-2x">
-						<i class="fas fa-circle fa-stack-2x"></i>
-						<strong class="fa-stack-1x fa-inverse">2</strong>
-					</span>
+			</div>	
+
+			<div class="resto-block" >
+				<div class="resto-block__nouveau-label">Nouveau</div>
+				<a href="restaurants/resto_menu.html">
+					<img class="resto-block__img"  src="images/small/la_note_enchantee_1000x1250.jpeg" alt="La note enchantée">
+				</a>
+				<div class="resto-block__info">
+					<div class="resto-block__info__text">
+						<h3>La note enchantée</h3>
+						<p>Charonne</p>
+					</div>
+					<div class="heart-icon">
+						<input type="checkbox" id="heart-note-enchantée" name="heart-note-enchantée">
+							<label for="heart-note-enchantée">
+								<span class="fa-stack ">
+									<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+									<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+								</span>
+							</label>
+					</div>
 				</div>
-				<div class="icon-figure"><i class="fas fa-list-ul  fa-lg fa-fw"></i></div>
-				<p>Composez votre menu</p> 
-			</div>
-			<div class="fonc__block">
-				<div class="icon-number">
-					<span class="fa-stack fa-2x">
-						<i class="fas fa-circle fa-stack-2x"></i>
-					<strong class="fa-stack-1x fa-inverse">3</strong>
-					</span>
+			</div>	
+
+			<div class="resto-block">
+				<a href="restaurants/la_francaise.html">
+					<img class="resto-block__img"  src="images/small/ala_francaise_1000x667.jpg" alt="À la française">
+				</a>
+				<div class="resto-block__info">
+					<div class="resto-block__info__text">
+						<h3>À la française</h3>
+						<p>Cité Rouge</p>
+					</div>
+					<div class="heart-icon">
+						<input type="checkbox" id="heart-la-française" name="heart-la-française">
+							<label for="heart-la-française">
+								<span class="fa-stack ">
+									<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+									<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+								</span>
+							</label>
+					</div>
 				</div>
-				<div class="icon-figure"><i class="fas fa-store fa-lg fa-fw"></i></div>
-				<p>Dégustez au restaurant</p>
-			</div>
-		</nav>
-	</section>
+			</div>	
 
 
-	<!--Section Restaurants-->
-	<section id="restaurants" class="main-grid">
-		<h2>Restaurants</h2>
-		<div class="resto-block" >
-			<div class="resto-block__nouveau-label">Nouveau</div>
-			<a href="restaurants/resto_menu.html">
-				<img class="resto-block__img"  src="images/small/la_palette_du_gout_1000x667.jpeg" alt="La palette du goût">
-			</a>
-			<div class="resto-block__info">
-				<div class="resto-block__info__text">
-					<h3>La palette du goût</h3>
-					<p>Ménilmontant</p>
+			<div class="resto-block">
+				<a href="restaurants/resto_menu.html">
+					<img class="resto-block__img"  src="images/small/delice_des_sens_1000x685.jpeg" alt="Le délice des sens">
+				</a>
+				<div class="resto-block__info">
+					<div class="resto-block__info__text">
+						<h3>Le délice des sens</h3>
+						<p>Folie-Méricourt</p>
+					</div>
+					<div class="heart-icon">
+						<input type="checkbox" id="heart-le-délice" name="heart-le-délice">
+							<label for="heart-le-délice">
+								<span class="fa-stack ">
+									<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
+									<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
+								</span>
+							</label>
+					</div>
 				</div>
-				<div class="heart-icon">
-					<input type="checkbox" id="heart-la-palette" name="heart-la-palette">
-						<label for="heart-la-palette">
-							<span class="fa-stack ">
-								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
-								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
-							</span>
-						</label>
-				</div>
-			</div>
-		</div>	
+			</div>	
+		</section>
+	
 
-		<div class="resto-block" >
-			<div class="resto-block__nouveau-label">Nouveau</div>
-			<a href="restaurants/resto_menu.html">
-				<img class="resto-block__img"  src="images/small/la_note_enchantee_1000x1250.jpeg" alt="La note enchantée">
-			</a>
-			<div class="resto-block__info">
-				<div class="resto-block__info__text">
-					<h3>La note enchantée</h3>
-					<p>Charonne</p>
+		<!--Footer -->
+		<footer>
+				<h3 class="titre">ohmyfood</h3>
+				<div class="foot-icon">
+					<i class="fas fa-utensils"></i>
+					<p>Proposer un restaurant</p>
 				</div>
-				<div class="heart-icon">
-					<input type="checkbox" id="heart-note-enchantée" name="heart-note-enchantée">
-						<label for="heart-note-enchantée">
-							<span class="fa-stack ">
-								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
-								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
-							</span>
-						</label>
+				<div class="foot-icon">
+					<i class="fas fa-handshake"></i>
+					<p>Devenir partenaire</p>
 				</div>
-			</div>
-		</div>	
+				<p>Mentions légales</p>
+				<a href="mailto:info@ohmyfood.com">Contact</a>
+		</footer>
+	</main>
 
-		<div class="resto-block">
-			<a href="restaurants/la_francaise.html">
-				<img class="resto-block__img"  src="images/small/ala_francaise_1000x667.jpg" alt="À la française">
-			</a>
-			<div class="resto-block__info">
-				<div class="resto-block__info__text">
-					<h3>À la française</h3>
-					<p>Cité Rouge</p>
-				</div>
-				<div class="heart-icon">
-					<input type="checkbox" id="heart-la-française" name="heart-la-française">
-						<label for="heart-la-française">
-							<span class="fa-stack ">
-								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
-								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
-							</span>
-						</label>
-				</div>
-			</div>
-		</div>	
-
-
-		<div class="resto-block">
-			<a href="restaurants/resto_menu.html">
-				<img class="resto-block__img"  src="images/small/delice_des_sens_1000x685.jpeg" alt="Le délice des sens">
-			</a>
-			<div class="resto-block__info">
-				<div class="resto-block__info__text">
-					<h3>Le délice des sens</h3>
-					<p>Folie-Méricourt</p>
-				</div>
-				<div class="heart-icon">
-					<input type="checkbox" id="heart-le-délice" name="heart-le-délice">
-						<label for="heart-le-délice">
-							<span class="fa-stack ">
-								<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
-								<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
-							</span>
-						</label>
-				</div>
-			</div>
-		</div>	
-	</section>
-
-	<!--Footer -->
-	<footer>
-		<h3 class="titre">ohmyfood</h3>
-		<div class="foot-icon">
-			<i class="fas fa-utensils"></i>
-			<p>Proposer un restaurant</p>
-		</div>
-		<div class="foot-icon">
-			<i class="fas fa-handshake"></i>
-			<p>Devenir partenaire</p>
-		</div>
-		<p>Mentions légales</p>
-		<a href="mailto:info@ohmyfood.com">Contact</a>
-	</footer>
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+/* heart button Icon and Animation  */
+
+.heart-main {
+	@include heart-format;
+}
+.heart-bg {
+	color: transparent;
+	&:focus {
+		display: block;
+	}
+}
+
+.heart-icon {
+	cursor: pointer;
+	margin-right: 2rem;
+	& input {
+		display: none;
+	}
+	& label {
+		cursor: pointer;
+	}
+	& input:checked + label {
+		.far {
+			opacity: 0;
+			transition: $heart-transition;
+		}
+		.fas {
+			transition: $heart-transition;
+			font-size: $heart-size;
+			background: linear-gradient($couleur-primaire, $couleur-secondaire);
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+	}
+}

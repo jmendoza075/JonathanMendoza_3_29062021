@@ -1,0 +1,61 @@
+@mixin center($direction) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+@mixin start($direction) {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+@mixin fonction-choix {
+	background-color: $couleur-back-grey1;
+	box-shadow: 3px 4px 5px $couleur-back-grey2;
+	height: 70px;
+	width: 85%;
+	border-radius: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+	margin-left: 7px;
+	padding-left: 33px;
+}
+@mixin button {
+	background: linear-gradient(
+		to left top,
+		$couleur-primaire,
+		$couleur-secondaire
+	);
+	box-shadow: 3px 4px 5px #d1d1d1;
+	height: 45px;
+	width: fit-content;
+	color: #f2f2f2;
+	border-radius: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	margin: 20px 0 50px;
+	padding: 0 40px;
+	transition: opacity 400ms;
+	&:hover {
+		opacity: 0.7;
+		box-shadow: 3px 4px 5px #6e6e6e;
+	}
+}
+@mixin hover-opaque {
+	&:hover {
+		opacity: 0.7;
+		box-shadow: 3px 4px 5px #6e6e6e;
+	}
+}
+
+@mixin heart-format {
+	font-size: $heart-size;
+	color: $heart-main-color;
+	font-weight: lighter;
+}

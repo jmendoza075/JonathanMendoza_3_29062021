@@ -1,0 +1,7 @@
+@media (min-width: 993px) {
+  .main-grid {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

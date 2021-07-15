@@ -1,0 +1,16 @@
+footer {
+	color: white;
+	background-color: #303030;
+	padding: 10px 20px 20px;
+	.foot-icon {
+		@include start(row);
+		margin-bottom: 16px;
+		.fa-handshake {
+			transform: rotate(315deg);
+		}
+		p {
+			padding-left: 10px;
+			margin: 0px;
+		}
+	}
+}

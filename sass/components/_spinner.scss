@@ -1,0 +1,51 @@
+/* loading spinner */
+#overlay {
+	position: fixed;
+	top: 4rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $couleur-back-grey1;
+	animation: fadeout 2.5s linear forwards;
+	z-index: 10;
+}
+
+#spinner {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -4rem;
+	border: 1rem solid #ff79da;
+	border-radius: 50%;
+	border-top: 1rem solid #9356dc;
+	border-bottom: 1rem solid #99e2d0;
+	width: 5rem;
+	height: 5rem;
+	animation: spin 2s linear forwards;
+}
+/* spinner animation */
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* overlay fadeout */
+
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
+}

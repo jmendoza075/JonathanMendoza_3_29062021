@@ -100,14 +100,73 @@
   width: 40px;
 }
 
-/* Animations */
-.grow {
-  -webkit-animation: grow 1.5s ease-in-out;
-          animation: grow 1.5s ease-in-out;
+/* Menu Animations*/
+#entree h4 {
+  opacity: 0;
+  -webkit-animation: grow 1.5s ease-in-out forwards 1s;
+          animation: grow 1.5s ease-in-out forwards 1s;
+}
+
+#entree .menu-list:nth-child(2) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 1s;
+          animation: menu-listing 1.5s ease-in forwards 1s;
+}
+
+#entree .menu-list:nth-child(3) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 1.5s;
+          animation: menu-listing 1.5s ease-in forwards 1.5s;
+}
+
+#entree .menu-list:nth-child(4) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 1.8s;
+          animation: menu-listing 1.5s ease-in forwards 1.8s;
+}
+
+#plats h4 {
+  opacity: 0;
+  -webkit-animation: grow 1.5s ease-in-out forwards 2.5s;
+          animation: grow 1.5s ease-in-out forwards 2.5s;
+}
+
+#plats .menu-list:nth-child(2) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 2.5s;
+          animation: menu-listing 1.5s ease-in forwards 2.5s;
+}
+
+#plats .menu-list:nth-child(3) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 3s;
+          animation: menu-listing 1.5s ease-in forwards 3s;
+}
+
+#plats .menu-list:nth-child(4) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 3.3s;
+          animation: menu-listing 1.5s ease-in forwards 3.3s;
+}
+
+#desserts h4 {
+  opacity: 0;
+  -webkit-animation: grow 1.5s ease-in-out forwards 3.5s;
+          animation: grow 1.5s ease-in-out forwards 3.5s;
+}
+
+#desserts .menu-list:nth-child(2) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 3.5s;
+          animation: menu-listing 1.5s ease-in forwards 3.5s;
+}
+
+#desserts .menu-list:nth-child(3) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 4s;
+          animation: menu-listing 1.5s ease-in forwards 4s;
+}
+
+#desserts .menu-list:nth-child(4) {
+  -webkit-animation: menu-listing 1.5s ease-in forwards 4.3s;
+          animation: menu-listing 1.5s ease-in forwards 4.3s;
 }
 
 @-webkit-keyframes grow {
   0% {
+    opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -116,6 +175,7 @@
             transform: scale(1.2);
   }
   100% {
+    opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -123,6 +183,7 @@
 
 @keyframes grow {
   0% {
+    opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -131,24 +192,10 @@
             transform: scale(1.2);
   }
   100% {
+    opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
-
-.menu-list:nth-child(2) {
-  -webkit-animation: menu-listing 1.5s ease-in 1.3s forwards;
-          animation: menu-listing 1.5s ease-in 1.3s forwards;
-}
-
-.menu-list:nth-child(3) {
-  -webkit-animation: menu-listing 1.7s ease-in 1.5s forwards;
-          animation: menu-listing 1.7s ease-in 1.5s forwards;
-}
-
-.menu-list:nth-child(4) {
-  -webkit-animation: menu-listing 1.7s ease-in 2s forwards;
-          animation: menu-listing 1.7s ease-in 2s forwards;
 }
 
 @-webkit-keyframes menu-listing {

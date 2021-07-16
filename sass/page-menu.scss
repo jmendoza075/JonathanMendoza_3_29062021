@@ -80,32 +80,33 @@
 		width: 40px;
 	}
 }
-/* Animations */
 
-.grow {
-	animation: grow 1.5s ease-in-out;
+/* Menu Animations*/
+#entree {
+	@include menu-animation(1);
 }
+
+#plats {
+	@include menu-animation(2.5);
+}
+#desserts {
+	@include menu-animation(3.5);
+}
+
 @keyframes grow {
 	0% {
+		opacity: 0;
 		transform: scale(1);
 	}
 	50% {
 		transform: scale(1.2);
 	}
 	100% {
+		opacity: 1;
 		transform: scale(1);
 	}
 }
 
-.menu-list:nth-child(2) {
-	animation: menu-listing 1.5s ease-in 1.3s forwards;
-}
-.menu-list:nth-child(3) {
-	animation: menu-listing 1.7s ease-in 1.5s forwards;
-}
-.menu-list:nth-child(4) {
-	animation: menu-listing 1.7s ease-in 2s forwards;
-}
 @keyframes menu-listing {
 	from {
 		opacity: 0;

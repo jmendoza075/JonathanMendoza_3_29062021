@@ -8,7 +8,7 @@
 			content="ohmyfood! localisez, choisissez le menu et réservez en ligne votre restaurant préféré." />
 		<link href="../css/style.css" type="text/css" rel="stylesheet">
 		<link href="../css/page-menu.css" type="text/css" rel="stylesheet">
-		<link href="../responsive.css" type="text/css" rel="stylesheet">
+		<link href="../css/responsive.css" type="text/css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,23 +23,25 @@
 			</nav>
 			<img id="logo" src="../images/ohmyfood.svg" alt="ohmyfood logo" />
 		</header>
-
-			<div class="hero-container">
-				<div class="image-box"><img class=" image-box__img"  src="../images/small/ala_francaise_1000x667.jpg" alt="À la française"></div>
-				<div class="titre-box"> 
-					<h1 class="titre">À la française</h1> 
-					<div class="heart-icon">
-						<input type="checkbox" id="la-française_menu" name="la-française_menu">
-							<label for="la-française_menu">
+			
+			
+		<div class="hero-container">
+			<div class="image-box"><img class=" image-box__img"  src="../images/small/ala_francaise_1000x667.jpg" alt="À la française"></div>
+			<div class="titre-box"> 
+				<h1 class="titre">À la française</h1> 
+				<div class="heart-icon">
+					<input type="checkbox" id="la-française_menu" name="la-française_menu">
+						<label for="la-française_menu">
 								<span class="fa-stack ">
 									<span class="heart-main"><i class="far fa-heart fa-stack-1x"></i></span>
 									<span class="heart-bg"><i class="fas fa-heart fa-stack-1x"></i></span>
 								</span>
-							</label>
-					</div>
+						</label>
 				</div>
 			</div>
-						
+		</div>
+
+		<div id="menu-responsive">				
 			<section id="entree" class="carte" >
 				<div class="menu" >
 					<h4>ENTRÉES</h4>
@@ -166,16 +168,16 @@
 					</div>
 				</div>
 			</section>	
-
+		</div>
 				
 
 			
 
-			<!--Section Commander-->
-			<div id="commander">
-				<button class="btn">Commander </button>
-			</div>
-		</main>			
+		<!--Section Commander-->
+		<div id="commander">
+			<button class="btn">Commander </button>
+		</div>
+				
 
 
 		<!--Footer -->

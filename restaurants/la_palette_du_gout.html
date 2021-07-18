@@ -8,7 +8,7 @@
 			content="ohmyfood! localisez, choisissez le menu et réservez en ligne votre restaurant préféré." />
 		<link href="../css/style.css" type="text/css" rel="stylesheet">
 		<link href="../css/page-menu.css" type="text/css" rel="stylesheet">
-		<link href="../responsive.css" type="text/css" rel="stylesheet">
+		<link href="../css/responsive.css" type="text/css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
 		<script src="https://kit.fontawesome.com/d7c3e1ebfe.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<!--Header-->
 		<header>
 			<nav>
 				<a href="../index.html"><i class="fas fa-arrow-left"></i> </a> 
@@ -24,7 +23,7 @@
 			<img id="logo" src="../images/ohmyfood.svg" alt="ohmyfood logo" />
 		</header>
 
-			<div class="hero-container">
+		<div class="hero-container">
 				<div class="image-box"><img class=" image-box__img"  src="../images/small/la_palette_du_gout_1000x667.jpeg" alt="La palette du goût"></div>
 				<div class="titre-box"> 
 					<h1 class="titre">La palette du goût</h1> 
@@ -38,8 +37,9 @@
 							</label>
 					</div>
 				</div>
-			</div>
-						
+		</div>
+		<!--Section Menu-->
+		<div id="menu-responsive">				
 			<section id="entree" class="carte" >
 				<div class="menu" >
 					<h4>ENTRÉES</h4>
@@ -166,18 +166,13 @@
 					</div>
 				</div>
 			</section>	
-
+		</div>
 				
-
+		<!--Section Commander-->
+		<div id="commander">
+			<button class="btn">Commander </button>
+		</div>
 			
-
-			<!--Section Commander-->
-			<div id="commander">
-				<button class="btn">Commander </button>
-			</div>
-		</main>			
-
-
 		<!--Footer -->
 		<footer>
 			<h3 class="titre">ohmyfood</h3>

@@ -1,4 +1,7 @@
 @import "./utils/mixins";
+@import "./utils/variables";
+
+/* Responsive Medium and Large screens */
 
 @media (min-width: 600px) {
 	#resto-area {
@@ -27,7 +30,16 @@
 			max-width: 400px;
 		}
 	}
+	#menu-responsive {
+		@include start(row);
+		justify-content: space-between;
+		background: $couleur-back-grey1;
+	}
+	.carte {
+		width: 30%;
+	}
 }
+/* Responsive XL screens */
 @media (min-width: 1200px) {
 	main {
 		display: grid;

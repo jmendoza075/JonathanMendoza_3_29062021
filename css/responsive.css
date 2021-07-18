@@ -1,158 +1,156 @@
 /* Responsive Medium and Large screens */
 @media (min-width: 600px) {
-  #resto-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #resto-area .resto-block {
-    width: 45%;
-    max-width: 400px;
-  }
+	#resto-area {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+	#resto-area .resto-block {
+		width: 45%;
+		max-width: 400px;
+	}
 }
 
 @media (min-width: 992px) {
-  #fonctionnement {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #fonctionnement nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #fonctionnement .fonc__block {
-    width: 26%;
-    min-width: 250px;
-    max-width: 400px;
-  }
-  #menu-responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background: #f2f2f2;
-  }
-  .carte {
-    width: 30%;
-  }
+	#fonctionnement {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	#fonctionnement nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	#fonctionnement .fonc__block {
+		width: 26%;
+		min-width: 250px;
+		max-width: 400px;
+	}
+	#menu-responsive {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		background: #f2f2f2;
+	}
+	.carte {
+		width: 30%;
+	}
 }
 
 /* Responsive XL screens */
 @media (min-width: 1200px) {
-  main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: (6rem)[4];
-        grid-template-rows: repeat(4, 6rem);
-    grid-auto-rows: 8rem;
-  }
-  header {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-  #localisation {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    grid-row: 2/5;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 3rem;
-  }
-  #localisation .map-search {
-    width: 40%;
-  }
-  #localisation #main-text {
-    padding: 2rem;
-  }
-  #fonctionnement {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    grid-row: 5/7;
-  }
-  #restaurants {
-    background-color: white;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
-    grid-column: 2/7;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 5;
-    grid-row: 5/10;
-  }
-  footer {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    -ms-grid-row: 10;
-    -ms-grid-row-span: 2;
-    grid-row: 10/12;
-  }
+	main {
+		display: -ms-grid;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, 6rem);
+		grid-auto-rows: 8rem;
+	}
+	header {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 6;
+		grid-column: 1/7;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1/2;
+	}
+	#localisation {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 6;
+		grid-column: 1/7;
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 3;
+		grid-row: 2/5;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		padding: 3rem;
+	}
+	#localisation .map-search {
+		width: 40%;
+	}
+	#localisation #main-text {
+		padding: 2rem;
+	}
+	#fonctionnement {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1/2;
+		-ms-grid-row: 5;
+		-ms-grid-row-span: 2;
+		grid-row: 5/7;
+	}
+	#restaurants {
+		background-color: white;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 5;
+		grid-column: 2/7;
+		-ms-grid-row: 5;
+		-ms-grid-row-span: 5;
+		grid-row: 5/10;
+	}
+	footer {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 6;
+		grid-column: 1/7;
+		-ms-grid-row: 10;
+		-ms-grid-row-span: 2;
+		grid-row: 10/12;
+	}
 }
 /*# sourceMappingURL=responsive.css.map */

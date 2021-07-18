@@ -38,54 +38,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Heart Icon Animation */
 }
 
 .hero-container .titre-box .titre {
   padding-left: 20px;
-}
-
-.hero-container .titre-box__heart-main {
-  font-size: 1.5rem;
-  color: #000;
-  font-weight: lighter;
-}
-
-.hero-container .titre-box__heart-bg {
-  color: transparent;
-}
-
-.hero-container .titre-box__heart-bg:focus {
-  display: block;
-}
-
-.hero-container .titre-box__heart-icon {
-  cursor: pointer;
-}
-
-.hero-container .titre-box__heart-icon input {
-  display: none;
-}
-
-.hero-container .titre-box__heart-icon label {
-  cursor: pointer;
-}
-
-.hero-container .titre-box__heart-icon input:checked + label .far {
-  opacity: 0;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
-}
-
-.hero-container .titre-box__heart-icon input:checked + label .fas {
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
-  font-size: 1.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 /* Setion MENU */
@@ -104,65 +60,65 @@
 /* Menu Animations*/
 #entree h4 {
   opacity: 0;
-  -webkit-animation: grow 1.5s ease-in-out forwards 1s;
-          animation: grow 1.5s ease-in-out forwards 1s;
+  -webkit-animation: grow 1.5s ease-in-out forwards 0.4s;
+          animation: grow 1.5s ease-in-out forwards 0.4s;
 }
 
 #entree .menu-list:nth-child(2) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 1s;
-          animation: menu-listing 1.5s ease-in forwards 1s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 0.4s;
+          animation: menu-listing 1.5s ease-in forwards 0.4s;
 }
 
 #entree .menu-list:nth-child(3) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 1.5s;
-          animation: menu-listing 1.5s ease-in forwards 1.5s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 0.9s;
+          animation: menu-listing 1.5s ease-in forwards 0.9s;
 }
 
 #entree .menu-list:nth-child(4) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 1.8s;
-          animation: menu-listing 1.5s ease-in forwards 1.8s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 1.2s;
+          animation: menu-listing 1.5s ease-in forwards 1.2s;
 }
 
 #plats h4 {
   opacity: 0;
-  -webkit-animation: grow 1.5s ease-in-out forwards 2.5s;
-          animation: grow 1.5s ease-in-out forwards 2.5s;
+  -webkit-animation: grow 1.5s ease-in-out forwards 1.5s;
+          animation: grow 1.5s ease-in-out forwards 1.5s;
 }
 
 #plats .menu-list:nth-child(2) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 2.5s;
-          animation: menu-listing 1.5s ease-in forwards 2.5s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 1.5s;
+          animation: menu-listing 1.5s ease-in forwards 1.5s;
 }
 
 #plats .menu-list:nth-child(3) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 3s;
-          animation: menu-listing 1.5s ease-in forwards 3s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 2s;
+          animation: menu-listing 1.5s ease-in forwards 2s;
 }
 
 #plats .menu-list:nth-child(4) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 3.3s;
-          animation: menu-listing 1.5s ease-in forwards 3.3s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 2.3s;
+          animation: menu-listing 1.5s ease-in forwards 2.3s;
 }
 
 #desserts h4 {
   opacity: 0;
-  -webkit-animation: grow 1.5s ease-in-out forwards 3.5s;
-          animation: grow 1.5s ease-in-out forwards 3.5s;
+  -webkit-animation: grow 1.5s ease-in-out forwards 2.8s;
+          animation: grow 1.5s ease-in-out forwards 2.8s;
 }
 
 #desserts .menu-list:nth-child(2) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 3.5s;
-          animation: menu-listing 1.5s ease-in forwards 3.5s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 2.8s;
+          animation: menu-listing 1.5s ease-in forwards 2.8s;
 }
 
 #desserts .menu-list:nth-child(3) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 4s;
-          animation: menu-listing 1.5s ease-in forwards 4s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 3.3s;
+          animation: menu-listing 1.5s ease-in forwards 3.3s;
 }
 
 #desserts .menu-list:nth-child(4) {
-  -webkit-animation: menu-listing 1.5s ease-in forwards 4.3s;
-          animation: menu-listing 1.5s ease-in forwards 4.3s;
+  -webkit-animation: menu-listing 1.5s ease-in forwards 3.6s;
+          animation: menu-listing 1.5s ease-in forwards 3.6s;
 }
 
 @-webkit-keyframes grow {
@@ -356,7 +312,7 @@
 
 #commander .btn:active {
   opacity: 0.7;
-  -webkit-box-shadow: 3px 4px 5px #6e6e6e;
-          box-shadow: 3px 4px 5px #6e6e6e;
+  -webkit-box-shadow: 3px 6px 5px #6e6e6e;
+          box-shadow: 3px 6px 5px #6e6e6e;
 }
 /*# sourceMappingURL=page-menu.css.map */

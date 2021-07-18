@@ -44,14 +44,14 @@
 	transition: opacity 400ms;
 	&:active {
 		opacity: 0.7;
-		box-shadow: 3px 4px 5px #6e6e6e;
+		box-shadow: 3px 6px 5px #6e6e6e;
 	}
 }
 
 @mixin hover-opaque {
 	&:hover {
 		opacity: 0.7;
-		box-shadow: 3px 4px 5px #6e6e6e;
+		box-shadow: 3px 6px 5px #6e6e6e;
 	}
 }
 

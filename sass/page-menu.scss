@@ -32,41 +32,6 @@
 		.titre {
 			padding-left: 20px;
 		}
-		/* Heart Icon Animation */
-
-		&__heart-main {
-			@include heart-format;
-		}
-		&__heart-bg {
-			color: transparent;
-			&:focus {
-				display: block;
-			}
-		}
-
-		&__heart-icon {
-			cursor: pointer;
-			& input {
-				display: none;
-			}
-			& label {
-				cursor: pointer;
-			}
-			& input:checked + label {
-				.far {
-					opacity: 0;
-					transition: $heart-transition;
-				}
-				.fas {
-					transition: $heart-transition;
-					font-size: $heart-size;
-					background: linear-gradient($couleur-primaire, $couleur-secondaire);
-					-webkit-background-clip: text;
-					background-clip: text;
-					color: transparent;
-				}
-			}
-		}
 	}
 }
 
@@ -84,14 +49,14 @@
 
 /* Menu Animations*/
 #entree {
-	@include menu-animation(1);
+	@include menu-animation(0.4);
 }
 
 #plats {
-	@include menu-animation(2.5);
+	@include menu-animation(1.5);
 }
 #desserts {
-	@include menu-animation(3.5);
+	@include menu-animation(2.8);
 }
 
 @keyframes grow {

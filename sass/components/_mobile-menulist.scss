@@ -3,7 +3,6 @@
 .touch-menulist {
 	background-color: $couleur-back-grey1;
 	display: flex;
-	padding: 0 20px;
 	height: 6rem;
 	overflow: hidden;
 	opacity: 0;
@@ -58,9 +57,9 @@
 		display: grid;
 		grid-template-columns: 3fr 0.5fr 0.5fr;
 		grid-template-rows: 2rem;
-		width: 100%;
+		width: 92%;
 		padding: 10px;
-		border-radius: 15px;
+		border-radius: 16px;
 		box-shadow: 3px 4px 5px #d1d1d1;
 		cursor: pointer;
 		overflow: hidden;

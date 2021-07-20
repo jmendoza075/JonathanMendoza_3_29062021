@@ -1,12 +1,5 @@
-main {
-	opacity: 0;
-	animation: mainpage-on 0.3s linear 1.5s forwards;
-}
-@keyframes mainpage-on {
-	to {
-		opacity: 1;
-	}
-}
+/* Map and Localisation  Section*/
+
 #localisation {
 	@include center(column);
 	background-color: $couleur-back-grey1;
@@ -43,7 +36,7 @@ main {
 	}
 }
 
-/* section Fonctionnement */
+/* Fonctionnement Section */
 #fonctionnement {
 	padding: 20px 20px;
 
@@ -58,6 +51,7 @@ main {
 		}
 		&:active {
 			background-color: #9356dc46;
+			box-shadow: 3px 6px 5px $couleur-back-grey2;
 			& .icon-figure {
 				color: $couleur-primaire;
 			}
@@ -81,7 +75,7 @@ main {
 	}
 }
 
-/* section Accueil Restaurants */
+/* Accueil Restaurants Section */
 
 #restaurants {
 	@include start(column);

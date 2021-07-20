@@ -41,16 +41,10 @@
 	border: none;
 	margin: 20px 0 50px;
 	padding: 0 40px;
-	transition: opacity 400ms;
+	transition: all 600ms;
 	&:active {
 		opacity: 0.7;
-		box-shadow: 3px 6px 5px #6e6e6e;
-	}
-}
-
-@mixin hover-opaque {
-	&:hover {
-		opacity: 0.7;
+		transform: scale(1.1);
 		box-shadow: 3px 6px 5px #6e6e6e;
 	}
 }
@@ -59,20 +53,4 @@
 	font-size: $heart-size;
 	color: $heart-main-color;
 	font-weight: lighter;
-}
-
-@mixin menu-animation($delay) {
-	h4 {
-		opacity: 0;
-		animation: grow 1.5s ease-in-out forwards $delay + 0 + s;
-	}
-	.menu-list:nth-child(2) {
-		animation: menu-listing 1.5s ease-in forwards $delay + 0 + s;
-	}
-	.menu-list:nth-child(3) {
-		animation: menu-listing 1.5s ease-in forwards $delay + 0.5 + s;
-	}
-	.menu-list:nth-child(4) {
-		animation: menu-listing 1.5s ease-in forwards $delay + 0.8 + s;
-	}
 }

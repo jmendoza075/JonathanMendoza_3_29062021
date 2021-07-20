@@ -1,0 +1,64 @@
+/* Page MENU des RESTAURANTS */
+
+.hero-container {
+	position: relative;
+	.image-box {
+		width: 100%;
+		height: 45vh;
+		/* put image-box behind */
+		z-index: 1;
+		&__img {
+			width: 100%;
+			height: 40vh;
+			object-fit: cover;
+		}
+	}
+
+	.titre-box {
+		position: absolute;
+		/* put the titre-box above image-box */
+		z-index: 2;
+		background: $couleur-back-grey1;
+		width: 100%;
+		bottom: 0em;
+		border-radius: 30px 30px 0 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		.titre {
+			padding-left: 20px;
+		}
+	}
+}
+
+/* Setion MENU */
+.carte {
+	background-color: $couleur-back-grey1;
+	padding: 20px;
+	h4 {
+		padding-bottom: 5px;
+		border-bottom: 4px solid #99e2d0;
+		width: 40px;
+		font-weight: bolder;
+	}
+}
+
+/* Menu Animations*/
+#entree {
+	@include menu-animation(0.4);
+}
+#plats {
+	@include menu-animation(1.5);
+}
+#desserts {
+	@include menu-animation(2.8);
+}
+
+#commander {
+	background-color: $couleur-back-grey1;
+	@include center(row);
+	.btn {
+		@include button;
+	}
+}

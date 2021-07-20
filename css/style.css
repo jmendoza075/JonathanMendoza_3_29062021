@@ -1,3 +1,4 @@
+/* Generalities */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -34,7 +35,7 @@ header #logo {
   margin: 0 auto;
 }
 
-/* loading spinner */
+/* Index page loading spinner */
 #overlay {
   position: fixed;
   top: 0;
@@ -160,24 +161,59 @@ header #logo {
   color: transparent;
 }
 
-main {
-  opacity: 0;
-  -webkit-animation: mainpage-on 0.3s linear 1.5s forwards;
-          animation: mainpage-on 0.3s linear 1.5s forwards;
+/* Menu page animation*/
+@-webkit-keyframes grow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes grow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-@-webkit-keyframes mainpage-on {
+@-webkit-keyframes menu-listing {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }
 }
 
-@keyframes mainpage-on {
+@keyframes menu-listing {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }
 }
 
+/* Map and Localisation  Section*/
 #localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,17 +291,19 @@ main {
   border: none;
   margin: 20px 0 50px;
   padding: 0 40px;
-  -webkit-transition: opacity 400ms;
-  transition: opacity 400ms;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
 }
 
 #localisation .btn:active {
   opacity: 0.7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: 3px 6px 5px #6e6e6e;
           box-shadow: 3px 6px 5px #6e6e6e;
 }
 
-/* section Fonctionnement */
+/* Fonctionnement Section */
 #fonctionnement {
   padding: 20px 20px;
 }
@@ -306,6 +344,8 @@ main {
 
 #fonctionnement .fonc__block:active {
   background-color: #9356dc46;
+  -webkit-box-shadow: 3px 6px 5px #dfdfdf;
+          box-shadow: 3px 6px 5px #dfdfdf;
 }
 
 #fonctionnement .fonc__block:active .icon-figure {
@@ -331,7 +371,7 @@ main {
   padding-left: 10px;
 }
 
-/* section Accueil Restaurants */
+/* Accueil Restaurants Section */
 #restaurants {
   display: -webkit-box;
   display: -ms-flexbox;

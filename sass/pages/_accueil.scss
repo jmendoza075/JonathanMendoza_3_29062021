@@ -56,7 +56,7 @@ main {
 			position: absolute;
 			left: -12px;
 		}
-		&:hover {
+		&:active {
 			background-color: #9356dc46;
 			& .icon-figure {
 				color: $couleur-primaire;

@@ -304,11 +304,11 @@ main {
   left: -12px;
 }
 
-#fonctionnement .fonc__block:hover {
+#fonctionnement .fonc__block:active {
   background-color: #9356dc46;
 }
 
-#fonctionnement .fonc__block:hover .icon-figure {
+#fonctionnement .fonc__block:active .icon-figure {
   color: #9356dc;
 }
 

@@ -13,13 +13,13 @@
 .heart-icon {
 	cursor: pointer;
 	margin-right: 2rem;
-	& input {
+	input {
 		display: none;
 	}
-	& label {
+	label {
 		cursor: pointer;
 	}
-	& input:checked + label {
+	input:checked + label {
 		.far {
 			opacity: 0;
 			transition: $heart-transition;

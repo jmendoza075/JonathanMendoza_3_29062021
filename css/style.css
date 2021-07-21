@@ -342,13 +342,13 @@ header #logo {
   left: -12px;
 }
 
-#fonctionnement .fonc__block:active {
+#fonctionnement .fonc__block:active, #fonctionnement .fonc__block:hover {
   background-color: #9356dc46;
   -webkit-box-shadow: 3px 6px 5px #dfdfdf;
           box-shadow: 3px 6px 5px #dfdfdf;
 }
 
-#fonctionnement .fonc__block:active .icon-figure {
+#fonctionnement .fonc__block:active .icon-figure, #fonctionnement .fonc__block:hover .icon-figure {
   color: #9356dc;
 }
 
@@ -449,6 +449,11 @@ header #logo {
   -webkit-box-shadow: 2px 3px 5px #d1d1d1;
           box-shadow: 2px 3px 5px #d1d1d1;
   border-radius: 3px;
+}
+
+#restaurants .resto-block:hover {
+  -webkit-box-shadow: 5px 5px 5px #d1d1d1;
+          box-shadow: 5px 5px 5px #d1d1d1;
 }
 
 footer {

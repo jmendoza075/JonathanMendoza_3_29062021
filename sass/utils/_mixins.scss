@@ -42,15 +42,19 @@
 	margin: 20px 0 50px;
 	padding: 0 40px;
 	transition: all 600ms;
-	&:active {
-		opacity: 0.7;
-		transform: scale(1.1);
-		box-shadow: 3px 6px 5px #6e6e6e;
-	}
 }
 
 @mixin heart-format {
 	font-size: $heart-size;
 	color: $heart-main-color;
 	font-weight: lighter;
+}
+
+@mixin click-active {
+	transition: all 500ms;
+	&:active {
+		opacity: 0.7;
+		transform: scale(1.1);
+		box-shadow: 3px 6px 5px #6e6e6e;
+	}
 }

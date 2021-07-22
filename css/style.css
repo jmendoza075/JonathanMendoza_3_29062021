@@ -293,6 +293,8 @@ header #logo {
   padding: 0 40px;
   -webkit-transition: all 600ms;
   transition: all 600ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 #localisation .btn:active {
@@ -335,6 +337,8 @@ header #logo {
   margin-left: 7px;
   padding-left: 33px;
   position: relative;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 #fonctionnement .fonc__block .icon-number {
@@ -342,14 +346,22 @@ header #logo {
   left: -12px;
 }
 
-#fonctionnement .fonc__block:active, #fonctionnement .fonc__block:hover {
+#fonctionnement .fonc__block:hover {
   background-color: #9356dc46;
   -webkit-box-shadow: 3px 6px 5px #dfdfdf;
           box-shadow: 3px 6px 5px #dfdfdf;
 }
 
-#fonctionnement .fonc__block:active .icon-figure, #fonctionnement .fonc__block:hover .icon-figure {
+#fonctionnement .fonc__block:hover .icon-figure {
   color: #9356dc;
+}
+
+#fonctionnement .fonc__block:active {
+  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 3px 6px 5px #6e6e6e;
+          box-shadow: 3px 6px 5px #6e6e6e;
 }
 
 #fonctionnement .fa-stack {
@@ -433,6 +445,7 @@ header #logo {
 #restaurants .resto-block__info__text {
   width: 85%;
   line-height: 0.5em;
+  cursor: pointer;
 }
 
 #restaurants .resto-block__nouveau-label {

@@ -357,6 +357,8 @@
   padding: 0 40px;
   -webkit-transition: all 600ms;
   transition: all 600ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 #commander .btn:active {

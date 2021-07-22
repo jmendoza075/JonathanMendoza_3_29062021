@@ -60,5 +60,6 @@
 	@include center(row);
 	.btn {
 		@include button;
+		@include click-active;
 	}
 }

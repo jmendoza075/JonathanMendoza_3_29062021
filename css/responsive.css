@@ -138,13 +138,36 @@
     grid-row: 5/7;
   }
   #restaurants {
-    background-color: white;
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/7;
     -ms-grid-row: 5;
     -ms-grid-row-span: 5;
     grid-row: 5/10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: white;
+    padding: 10px 20px;
+  }
+  #restaurants #resto-area {
+    width: 100%;
+  }
+  #restaurants #resto-area .resto-block {
+    height: 250px;
+    max-width: 600px;
   }
   footer {
     -ms-grid-column: 1;

@@ -10,6 +10,7 @@ a {
 
 .titre {
   font-family: Shrikhand;
+  letter-spacing: 0.12rem;
 }
 
 header {
@@ -138,7 +139,7 @@ header #logo {
 
 .heart-icon {
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .heart-icon input {
@@ -461,8 +462,13 @@ header #logo {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  line-height: 0.2em;
   cursor: pointer;
+  margin-top: 5px;
+}
+
+#restaurants .resto-block__info__text h3,
+#restaurants .resto-block__info__text p {
+  margin: 0;
 }
 
 #restaurants .resto-block__nouveau-label {

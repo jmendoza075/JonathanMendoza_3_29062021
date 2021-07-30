@@ -166,6 +166,27 @@ header #logo {
   color: transparent;
 }
 
+.heart-hover {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.heart-hover:hover .far {
+  opacity: 0;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.heart-hover:hover .fas {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 /* Menu page animation*/
 @-webkit-keyframes grow {
   0% {
@@ -485,6 +506,7 @@ header #logo {
   -webkit-box-shadow: 2px 3px 5px #d1d1d1;
           box-shadow: 2px 3px 5px #d1d1d1;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 #restaurants .resto-block:hover {

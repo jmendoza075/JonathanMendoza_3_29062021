@@ -33,3 +33,22 @@
 		}
 	}
 }
+
+.heart-hover {
+	cursor: pointer;
+	margin-right: 1rem;
+
+	&:hover {
+		.far {
+			opacity: 0;
+			transition: $heart-transition;
+		}
+		.fas {
+			transition: $heart-transition;
+			font-size: $heart-size;
+			background: linear-gradient($couleur-primaire, $couleur-secondaire);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+	}
+}

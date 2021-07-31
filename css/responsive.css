@@ -134,8 +134,8 @@
 		-ms-grid-column-span: 1;
 		grid-column: 1/2;
 		-ms-grid-row: 5;
-		-ms-grid-row-span: 2;
-		grid-row: 5/7;
+		-ms-grid-row-span: 3;
+		grid-row: 5/8;
 	}
 	#restaurants {
 		-ms-grid-column: 2;
@@ -173,9 +173,9 @@
 		-ms-grid-column: 1;
 		-ms-grid-column-span: 6;
 		grid-column: 1/7;
-		-ms-grid-row: 10;
+		-ms-grid-row: 11;
 		-ms-grid-row-span: 2;
-		grid-row: 10/12;
+		grid-row: 11/13;
 	}
 }
 /*# sourceMappingURL=responsive.css.map */

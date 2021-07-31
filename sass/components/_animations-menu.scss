@@ -5,13 +5,13 @@
 		opacity: 0;
 		animation: grow 1.5s ease-in-out forwards $delay + 0 + s;
 	}
-	.touch-menulist:nth-child(2) {
+	.hover-menulist:nth-child(2) {
 		animation: menu-listing 1.5s ease-in forwards $delay + 0 + s;
 	}
-	.touch-menulist:nth-child(3) {
+	.hover-menulist:nth-child(3) {
 		animation: menu-listing 1.5s ease-in forwards $delay + 0.5 + s;
 	}
-	.touch-menulist:nth-child(4) {
+	.hover-menulist:nth-child(4) {
 		animation: menu-listing 1.5s ease-in forwards $delay + 0.8 + s;
 	}
 }

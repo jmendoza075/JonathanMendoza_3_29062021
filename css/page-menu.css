@@ -1,5 +1,5 @@
-/*  MOBILE or TOUCH Screens Clickable Menu listings */
-.touch-menulist {
+/*  Menu listings on Hover*/
+.hover-menulist {
   background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,7 +9,7 @@
   opacity: 0;
 }
 
-.touch-menulist__title {
+.hover-menulist__title {
   font-size: larger;
   font-weight: bolder;
   text-overflow: ellipsis;
@@ -23,7 +23,7 @@
   grid-row: 1/2;
 }
 
-.touch-menulist__sub-title {
+.hover-menulist__sub-title {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -35,7 +35,7 @@
   grid-row: 2/3;
 }
 
-.touch-menulist__price {
+.hover-menulist__price {
   font-weight: bolder;
   padding-right: 5px;
   text-overflow: ellipsis;
@@ -49,10 +49,10 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin: 0 -2rem 0 0;
+  margin: 0 -2.5rem 0 0;
 }
 
-.touch-menulist .touch-checked-box {
+.hover-menulist .hover-checked-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +85,7 @@
           transform: translateX(4rem);
 }
 
-.touch-menulist .touch-checked-icon {
+.hover-menulist .hover-checked-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,7 +105,7 @@
           transition-duration: 0.5s;
 }
 
-.touch-menulist label {
+.hover-menulist .hover-menu-item {
   background: white;
   display: -ms-grid;
   display: grid;
@@ -113,38 +113,26 @@
       grid-template-columns: 3fr 0.5fr 0.5fr;
   -ms-grid-rows: 2rem;
       grid-template-rows: 2rem;
-  width: 92%;
+  width: 97%;
   padding: 10px 0 10px 10px;
-  border-radius: 16px;
-  -webkit-box-shadow: 3px 4px 5px #d1d1d1;
-          box-shadow: 3px 4px 5px #d1d1d1;
+  border-radius: 18px;
+  -webkit-box-shadow: 0 2px 4px #d1d1d1;
+          box-shadow: 0 2px 4px #d1d1d1;
   cursor: pointer;
   overflow: hidden;
   height: 3.5rem;
 }
 
-.touch-menulist input[type="checkbox"] {
-  display: none;
-}
-
-.touch-menulist input:checked + label .touch-checked-box {
+.hover-menulist :hover .hover-checked-box {
   -webkit-transform: translateX(0rem);
           transform: translateX(0rem);
   margin-left: 2.5rem;
   opacity: 1;
 }
 
-.touch-menulist input:checked + label .touch-checked-box .touch-checked-icon {
+.hover-menulist :hover .hover-checked-box .hover-checked-icon {
   -webkit-transform: rotate(0);
           transform: rotate(0);
-}
-
-.touch-menulist input:checked + label:before {
-  content: "";
-}
-
-.touch-menulist input.checkbox:checked + label:before {
-  content: "";
 }
 
 /* Menu page animation*/
@@ -246,6 +234,10 @@
   margin-bottom: 0px;
 }
 
+.hero-container .titre-box .heart-hover {
+  margin: 1rem 1.5rem 0 0;
+}
+
 /* Setion MENU */
 .carte {
   background-color: #f2f2f2;
@@ -267,17 +259,17 @@
           animation: grow 1.5s ease-in-out forwards 0.4s;
 }
 
-#entree .touch-menulist:nth-child(2) {
+#entree .hover-menulist:nth-child(2) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 0.4s;
           animation: menu-listing 1.5s ease-in forwards 0.4s;
 }
 
-#entree .touch-menulist:nth-child(3) {
+#entree .hover-menulist:nth-child(3) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 0.9s;
           animation: menu-listing 1.5s ease-in forwards 0.9s;
 }
 
-#entree .touch-menulist:nth-child(4) {
+#entree .hover-menulist:nth-child(4) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 1.2s;
           animation: menu-listing 1.5s ease-in forwards 1.2s;
 }
@@ -288,17 +280,17 @@
           animation: grow 1.5s ease-in-out forwards 1.5s;
 }
 
-#plats .touch-menulist:nth-child(2) {
+#plats .hover-menulist:nth-child(2) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 1.5s;
           animation: menu-listing 1.5s ease-in forwards 1.5s;
 }
 
-#plats .touch-menulist:nth-child(3) {
+#plats .hover-menulist:nth-child(3) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 2s;
           animation: menu-listing 1.5s ease-in forwards 2s;
 }
 
-#plats .touch-menulist:nth-child(4) {
+#plats .hover-menulist:nth-child(4) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 2.3s;
           animation: menu-listing 1.5s ease-in forwards 2.3s;
 }
@@ -309,17 +301,17 @@
           animation: grow 1.5s ease-in-out forwards 2.8s;
 }
 
-#desserts .touch-menulist:nth-child(2) {
+#desserts .hover-menulist:nth-child(2) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 2.8s;
           animation: menu-listing 1.5s ease-in forwards 2.8s;
 }
 
-#desserts .touch-menulist:nth-child(3) {
+#desserts .hover-menulist:nth-child(3) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 3.3s;
           animation: menu-listing 1.5s ease-in forwards 3.3s;
 }
 
-#desserts .touch-menulist:nth-child(4) {
+#desserts .hover-menulist:nth-child(4) {
   -webkit-animation: menu-listing 1.5s ease-in forwards 3.6s;
           animation: menu-listing 1.5s ease-in forwards 3.6s;
 }

@@ -1,6 +1,6 @@
-/*  MOBILE or TOUCH Screens Clickable Menu listings */
+/*  Menu listings on Hover*/
 
-.touch-menulist {
+.hover-menulist {
 	background-color: $couleur-back-grey1;
 	display: flex;
 	height: 6rem;
@@ -32,10 +32,10 @@
 		justify-self: end;
 		grid-column: 2/3;
 		grid-row: 2/3;
-		margin: 0 -2rem 0 0;
+		margin: 0 -2.5rem 0 0;
 	}
 
-	.touch-checked-box {
+	.hover-checked-box {
 		@include center(row);
 		background-color: $couleur-tertiaire;
 		width: 4rem;
@@ -49,45 +49,32 @@
 		transition: all 0.6s ease;
 		transform: translateX(4rem);
 	}
-	.touch-checked-icon {
+	.hover-checked-icon {
 		@include center(row);
 		transform: rotate(180deg);
 		transition-duration: 0.5s;
 	}
 
-	label {
+	.hover-menu-item {
 		background: white;
 		display: grid;
 		grid-template-columns: 3fr 0.5fr 0.5fr;
 		grid-template-rows: 2rem;
-		width: 92%;
+		width: 97%;
 		padding: 10px 0 10px 10px;
-		border-radius: 16px;
-		box-shadow: 3px 4px 5px #d1d1d1;
+		border-radius: 18px;
+		box-shadow: 0 2px 4px #d1d1d1;
 		cursor: pointer;
 		overflow: hidden;
 		height: 3.5rem;
 	}
-
-	input[type="checkbox"] {
-		display: none;
-	}
-
-	input:checked + label .touch-checked-box {
+	:hover .hover-checked-box {
 		transform: translateX(0rem);
 		margin-left: 2.5rem;
 		opacity: 1;
 
-		.touch-checked-icon {
+		.hover-checked-icon {
 			transform: rotate(0);
 		}
-	}
-
-	input:checked + label:before {
-		content: "";
-	}
-
-	input.checkbox:checked + label:before {
-		content: "";
 	}
 }

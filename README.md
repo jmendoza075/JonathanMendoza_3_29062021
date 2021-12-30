@@ -2,7 +2,7 @@
 
 ## OpenClassroooms Project 3
 
-> "Project 3 : Dynamisez une page web avec des animations CSS" dans le cadre du cours de Développeur Web chez OpenClassroooms.
+> "Projet 3 : Dynamisez une page web avec des animations CSS" dans le cadre du cours de Développeur Web chez OpenClassroooms.
 
 > This is "Project 3: Create a dynamic webpage using only CSS animations " as part for the Web Developper training course at OpenClassrooms.
 
